@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { About } from "./pages/about";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Carousel from "./components/carousel";
+import { Social } from "./components/social";
 
 export default function Home() {
 	return (
@@ -13,23 +13,10 @@ export default function Home() {
 					backgroundPosition: "center",
 				}}
 			>
-				<div className="text-center space-y-4 p-6 rounded-lg flex flex-col items-center fixed">
+				<div className="space-y-10 p-6 rounded-lg flex flex-col fixed w-full px-40">
 					<h1 className="text-7xl font-bold text-white">Welcome!</h1>
-					<p className="text-5xl font-semibold text-white">I am </p>
-					<div className="flex justify-center w-fit gap-8 mt-4 rounded-full bg-white py-2 px-4 shadow-lg bg-opacity-40">
-						<Link href="/about" className="hover:text-blue-500">
-							<FaFacebook className="w-6 h-6" />
-						</Link>
-						<Link href="/projects" className="hover:text-purple-500">
-							<FaInstagram className="w-6 h-6" />
-						</Link>
-						<Link href="/projects" className="hover:text-black">
-							<FaGithub className="w-6 h-6" />
-						</Link>
-						<Link href="/projects" className="hover:text-blue-500">
-							<FaLinkedin className="w-6 h-6" />
-						</Link>
-					</div>
+					<Carousel />
+					<Social />
 				</div>
 			</div>
 
