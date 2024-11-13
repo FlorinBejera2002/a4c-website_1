@@ -1,7 +1,7 @@
 export const About = () => {
     return (
         <>
-            <div className="absolute  bottom-28 left-0 w-full overflow-hidden leading-[0]">
+            <div className="absolute  -bottom-28 left-0 w-full overflow-hidden leading-[0]">
                 {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
                 <svg
                     viewBox="0 0 1200 120"
