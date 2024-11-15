@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<>
 			<div
-				className="min-h-screen w-full bg-fixed flex items-center justify-center"
+				className="h-[1100px] w-full bg-fixed flex items-center justify-center"
 				style={{
 					backgroundImage: "url('/hero-image.jpg')",
 					backgroundSize: "cover",
