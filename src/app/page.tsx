@@ -1,6 +1,7 @@
 import { About } from "./pages/about";
 import Carousel from "./components/carousel";
 import { Social } from "./components/social";
+import { Projects } from "./pages/propjects";
 
 export default function Home() {
 	return (
@@ -21,6 +22,7 @@ export default function Home() {
 			</div>
 
 			<About />
+			<Projects />
 		</>
 	);
 }
