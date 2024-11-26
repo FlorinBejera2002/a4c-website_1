@@ -14,9 +14,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "Vlad Crișan",
-	description: "My personal website",
-	icons: "/logo.svg",
+	title: "HEBRON AFH",
+	description: "HEBRON AFH",
+	icons: "/logo-website-1.webp",
 };
 
 import "./globals.css";

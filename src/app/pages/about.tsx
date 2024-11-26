@@ -1,105 +1,105 @@
+import Link from "next/link";
+import { FaBath, FaBed, FaPhone } from "react-icons/fa";
+
 export const About = () => {
 	return (
 		<>
-			<div className=" h-[900px] flex flex-col  relative bg-white z-10 px-40 gap-16">
-				<h2 className="text-xl font-bold text-gray-800 pt-10 border-b pb-2 max-w-40 border-black">
-					about me
+			<div
+				className=" h-screen flex flex-col  relative bg-white z-10 md:px-40 gap-16"
+				id="about"
+			>
+				<h2 className="text-xl font-bold text-[#004d5a] pt-10 border-b pb-2 max-w-40 border-[#004d5a]">
+					about us
 				</h2>
-				<div className="grid md:grid-cols-2 w-full gap-8">
-					<div className="shadow-md flex flex-col gap-4 p-5">
-						<h3 className="text-xl text-accent font-semibold  font-serif">
-							Who I Am
-						</h3>
-						<p className=" text-lg text-gray-600 font-serif">
-							As a passionate and skilled developer, I specialize in creating
-							innovative and efficient software solutions. From crafting
-							enterprise-grade ERP systems to building seamless integrations and
-							workflows, my work spans across diverse industries, including
-							tech, logistics, and energy. I'm driven by a desire to raise the
-							bar in every project I touch, ensuring quality, scalability, and
-							user-focused designs.
-						</p>
-					</div>
+				<div className="md:flex justify-between w-full">
+					<div className="flex flex-col gap-6 max-w-3xl">
+						<div className="flex flex-col gap-2">
+							<h3 className="text-3xl text-[#004d5a] font-serif font-bold">
+								Who We Are
+							</h3>
 
-					<div className="shadow-md flex flex-col gap-4 p-5">
-						<h3 className="text-xl text-accent font-semibold font-serif">
-							My Philosophy
-						</h3>
-						<p className=" font-serif text-lg text-gray-400">
-							#Driver #Multiplier #PeoplePerson #GodFirst:
-						</p>
-						<p className=" font-serif  text-lg text-gray-600">
-							I believe in creating meaningful impact through collaboration,
-							innovation, and faith-driven initiatives.
-						</p>
-						<p className=" font-serif  text-lg text-gray-600">
-							<b>Empowering Others:</b> I take pride in mentoring and training
-							team members, helping them grow while driving the success of our
-							collective goals.
-						</p>
-					</div>
+							<p className="text-xl text-[#004d5a] font-serif">
+								Hebron AFH is a trusted <b>Adult Family Home</b> located in
+								Edmonds, WA, proudly serving the residents of Snohomish County.
+								With a commitment to providing personalized and compassionate
+								care, we strive to create a warm, welcoming environment for all
+								our residents.
+							</p>
+						</div>
 
-					<div className="shadow-md flex flex-col gap-4 p-5">
-						<h3 className="text-xl text-accent font-semibold font-serif">
-							What I Do
-						</h3>
-						<p className=" font-serif  text-lg text-gray-600">
-							I have a proven track record of leading teams, driving innovation,
-							and delivering exceptional results.
-						</p>
-						<div>
-							{/* <b className="text-lg text-gray-600 font-serif ">
-								My portfolio includes:
-							</b> */}
-							<p className=" font-serif  text-lg text-gray-600">
-								<b>ERP Product for Moving Companies:</b> Designed and developed
-								an ERP system at Ametras to streamline operations for moving
-								companies.
+						<div className="flex flex-col gap-2">
+							<h3 className="text-3xl text-[#004d5a] font-serif font-bold">
+								Our Mission
+							</h3>
+
+							<p className="text-xl text-[#004d5a] font-serif">
+								Our mission is to offer a home-like setting where residents feel
+								safe, valued, and cared for. We focus on maintaining the
+								dignity, independence, and well-being of each individual by
+								tailoring our services to meet their unique needs.
 							</p>
-							<p className=" font-serif  text-lg text-gray-600">
-								<b>Advanced Tools at Bluematrix:</b> Built a PDF Converter and
-								an Excel Add-in, alongside transitioning systems to Shibboleth
-								SSO for improved security.
+						</div>
+
+						<div className="flex flex-col gap-2">
+							<h3 className="text-3xl text-[#004d5a] font-serif font-bold">
+								Services We Offer
+							</h3>
+							<ul className="text-xl text-[#004d5a] font-serif">
+								Comprehensive care for residents with:
+								<li className="pl-10 font-semibold">- Dementia</li>
+								<li className="pl-10 font-semibold">
+									- Mental Health Conditions
+								</li>
+								<li className="pl-10 font-semibold">
+									- Developmental Disabilities
+								</li>
+							</ul>
+							<p className="text-xl text-[#004d5a] font-serif">
+								Assistance with daily activities
 							</p>
-							<div>
-								<p className=" font-serif font-bold  text-lg text-gray-700">
-									Scalable Solutions at epilot:
-								</p>
-								<p className=" font-serif  text-lg text-gray-600 pl-5">
-									- Spearheaded the transition of the Ivy Monolith to{" "}
-									<b>epilot 360</b>, improving workflows and automation
-									processes.
-								</p>
-								<p className=" font-serif  text-lg text-gray-600 pl-5">
-									- Led the <b>Alpha Team</b>, fostering trust, synergy, and
-									teamwork.
-								</p>
-								<p className=" font-serif  text-lg text-gray-600 pl-5">
-									- Implemented advanced features such as webhooks, notes, and
-									automated workflows.
-								</p>
-							</div>
+							<p className="text-xl text-[#004d5a] font-serif">
+								Medication management
+							</p>
+							<p className="text-xl text-[#004d5a] font-serif">
+								Personalized meal plans and nutritional support
+							</p>
+							<p className="text-xl text-[#004d5a] font-serif">
+								Recreational activities to promote mental and physical health
+							</p>
+							<p className="text-xl text-[#004d5a] font-serif">
+								24-hour monitoring and care from trained professionals
+							</p>
 						</div>
 					</div>
+					<div className="flex flex-col w-fit gap-1 max-w-lg">
+						<div className=" flex flex-col gap-8 mt-28  p-10 items-center bg-[#d1ccc2] bg-opacity-50 text-center rounded-tr-md rounded-tl-md">
+							<h3 className="text-4xl text-[#004d5a] font-bold  font-serif">
+								23426 84th Ave W, Edmonds, WA 98026, USA
+							</h3>
 
-					<div className="shadow-md flex flex-col gap-4 p-5">
-						<h3 className="text-xl text-accent font-semibold font-serif">
-							What I’m Proud Of
-						</h3>
-						<p className=" font-serif  text-lg text-gray-600">
-							Successfully transitioned through roles from{" "}
-							<b>Senior Developer</b> to <b>Tech Lead</b>, and eventually{" "}
-							<b>Senior Tech Lead Principal</b>.
-						</p>
-						<p className=" font-serif  text-lg text-gray-600">
-							Made significant contributions to the energy sector, designing
-							robust software solutions tailored to its unique challenges.
-						</p>
-						<p className=" font-serif  text-lg text-gray-600">
-							Founded <b>new ark</b>, a visionary company that helps clients
-							navigate to success with innovative approaches and world-class
-							tools.
-						</p>
+							<p className=" text-2xl text-[#004d5a] font-serif">
+								24 Hour Care
+							</p>
+							<p className=" text-2xl text-[#004d5a] font-serif">
+								Visiting Hours: <b>9:00am – 8:00pm</b>
+							</p>
+
+							<Link
+								href="tel:425-776-7657"
+								className="flex items-center text-xl w-fit gap-4 text-white font-serif rounded-full bg-[#004d5a] py-2 px-6 shadow-sm "
+							>
+								<FaPhone />
+								425-776-7657
+							</Link>
+						</div>
+						<div className="flex gap-1 w-full">
+							<div className="bg-[#d1ccc2] px-16 py-5  bg-opacity-50 rounded-bl-md flex justify-center w-1/2">
+								<FaBed className="w-20 text-[#004d5a] h-12" />
+							</div>
+							<div className="bg-[#d1ccc2] px-16 py-5  bg-opacity-50 rounded-br-md flex justify-center w-1/2">
+								<FaBath className="w-20 text-[#004d5a] h-12" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
